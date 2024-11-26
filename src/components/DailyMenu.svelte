@@ -2,7 +2,7 @@
 	import Icon from '@iconify/svelte';
 	import { fade, crossfade, slide } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
-	import dailymenu from '/src/lib/dailymenu.json';
+	import dailymenu from '/src/components/dailymenu.json';
 	let { dailyMenuHidden = $bindable() } = $props();
 
 	export const [send, receive] = crossfade({
